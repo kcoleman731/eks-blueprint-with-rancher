@@ -38,7 +38,7 @@ module "rancher" {
   eks_cluster_id = var.eks_cluster_id
   helm_config = {
     values = [templatefile("${path.module}/values/rancher.yaml", {
-      hostname          = "locals.${var.eks_cluster_domain}"
+      hostname          = "rancher.${var.eks_cluster_domain}"
       email             = var.lets_encrypt_email
       bootstrapPassword = var.rancher_bootstrap_password
     })]
