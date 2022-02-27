@@ -1,6 +1,6 @@
 # Rancher Example
 
-This repo contains the source code for an EKS Blueprint which demonstrates how to deploy Rancher on EKS. 
+This repo contains the source code for an EKS blueprint which demonstrates how to deploy Rancher on EKS. 
 
 ## Usage 
 
@@ -9,8 +9,8 @@ This repo contains the source code for an EKS Blueprint which demonstrates how t
 Update `locals.tf` with your desired values. Required values to update are 
 
 ```
-# Must be a domain for a Route53 zone that exists in your AWS account.
-cluster_domain              = "<cluster_domain"
+# Must be a domain for a Route53 zone that exists in your AWS account. Rancher URL will be https://rancher.<cluster_domain>.
+cluster_domain              = "<cluster_domain>"
 rancher_bootstrap_password  = "<rancher_password>"
 lets_encrypt_email          = "<lets_encrypt_email"
 ```
