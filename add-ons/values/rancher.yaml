@@ -1,0 +1,5 @@
+hostname: ${hostname}
+bootstrapPassword: ${bootstrapPassword}
+ingress:
+  tls:
+    source: rancher
