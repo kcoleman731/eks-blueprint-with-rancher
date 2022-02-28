@@ -3,7 +3,7 @@
 #---------------------------------------------------------------
 
 module "eks_cluster" {
-  source = "github.com/aws-samples/aws-eks-accelerator-for-terraform?ref=5cbbe7ee4be3c6a945c72d128ded92e5f97885e5"
+  source = "github.com/aws-samples/aws-eks-accelerator-for-terraform?ref=3ffe8c32f6c5b940e1285f1a60719581d9e51782"
 
   #---------------------------------------------------------------
   # Environment
@@ -30,7 +30,7 @@ module "eks_cluster" {
 }
 
 module "eks_addons" {
-  source = "github.com/aws-samples/aws-eks-accelerator-for-terraform//modules/kubernetes-addons?ref=5cbbe7ee4be3c6a945c72d128ded92e5f97885e5"
+  source = "github.com/aws-samples/aws-eks-accelerator-for-terraform//modules/kubernetes-addons?ref=3ffe8c32f6c5b940e1285f1a60719581d9e51782"
 
   #---------------------------------------------------------------
   # Globals
