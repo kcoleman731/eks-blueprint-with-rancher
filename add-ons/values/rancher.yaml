@@ -2,4 +2,8 @@ hostname: ${hostname}
 bootstrapPassword: ${bootstrapPassword}
 ingress:
   tls:
-    source: rancher
+    source: letsEncrypt
+letsEncrypt:
+  email: ${email}
+  ingress: 
+    class: nginx
